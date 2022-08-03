@@ -5,9 +5,9 @@ import promptSync from 'prompt-sync'
 const prompt = promptSync()
 
 
-const limit = prompt('Enter number limit: ')
+let limit = prompt('Enter number limit: ')
 
-const numGenerator = new NumGenerator(limit)
+const numGenerator = new NumGenerator(limit = 100)
 
 const playersAmount = parseInt(prompt('Enter amount of players: '))
 
