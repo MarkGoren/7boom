@@ -1,7 +1,7 @@
 import { EventEmitter } from "events"
 
 class NumGenerator extends EventEmitter{
-    constructor(limit = 100){
+    constructor(limit){
         super();
         this.numGenerator = this.generateNumbers(limit)
     }
@@ -27,7 +27,7 @@ class NumGenerator extends EventEmitter{
                 clearInterval(myInterval)
                 return
             }
-            
+
             if (count< len){
                 listeners[count](value)
                 count++

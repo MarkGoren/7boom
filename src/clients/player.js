@@ -7,7 +7,7 @@ class Player{
     }
 
     play = (number)=>{
-        if (number % 7 === 0 || toString(number).includes('7')){
+        if (number % 7 === 0 || JSON.stringify(number).includes('7')){
             console.log(chalk.greenBright(`${this.name}: BOOM`))
         }else{
             console.log(chalk.greenBright(`${this.name}: ${number}`))
